@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Blog | The Prosper Plumber</title>
+    <meta name="description" content="Expert plumbing advice, maintenance tips, and industry insights for Prosper, TX homeowners. Learn how to protect your home and prevent emergencies.">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5B4BFF',
+                        secondary: '#EEF0FF',
+                        accent: '#00E5A8',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 40px rgba(0,0,0,0.1)',
+                        'glow': '0 0 20px rgba(91, 75, 255, 0.3)',
+                    },
+                    scale: {
+                        '102': '1.02',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .clip-path-diagonal { clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+        .faq-answer.hidden { display: none; }
+        .mobile-menu.hidden { display: none; }
+    </style>
+</head>
+<body class="bg-white text-gray-800 antialiased selection:bg-accent selection:text-white">
+
+    <!-- Navigation -->
+    <header class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300">
+        <nav class="max-w-7xl mx-auto px-6 lg:px-16 h-24">
+            <div class="flex items-center justify-between h-full">
+                <!-- Logo -->
+                <a href="https://jb3147.github.io/prosper-plumbing-services-2026-01-16-t7bt4" class="flex items-center gap-2 group">
+                    <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white group-hover:rotate-12 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25" />
+                        </svg>
+                    </div>
+                    <span class="text-xl font-bold tracking-tight text-gray-900 group-hover:text-primary transition-colors">The Prosper Plumber</span>
+                </a>
+
+                <!-- Back Link -->
+                <a href="https://jb3147.github.io/prosper-plumbing-services-2026-01-16-t7bt4" class="font-medium text-gray-600 hover:text-primary transition-colors flex items-center gap-2">
+                    <i class="fas fa-arrow-left text-sm"></i> Back
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Blog Content -->
+    <main>
+        <!-- Header / Intro Section -->
+        <section class="relative pt-32 pb-16 lg:pt-48 lg:pb-24 overflow-hidden bg-gradient-to-br from-secondary via-white to-white">
+            <!-- Abstract Shapes -->
+            <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-[#EEF0FF] to-transparent opacity-60 rounded-l-[100px] pointer-events-none"></div>
+            <div class="absolute bottom-0 left-0 w-64 h-64 bg-accent/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-6 lg:px-16 relative z-10 text-center">
+                <div class="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-md border border-gray-100 mb-8 animate-fade-in-up">
+                    <span class="text-sm font-bold text-gray-700">Insights & Tips</span>
+                </div>
+                
+                <h1 class="text-5xl lg:text-7xl font-bold tracking-tight text-gray-900 leading-[1.1] mb-6 animate-fade-in-up">
+                    Our <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Blog</span>
+                </h1>
+                
+                <p class="text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto animate-fade-in-up">
+                    Welcome to our knowledge hub. Here we share expert plumbing advice, seasonal maintenance tips, and industry insights designed specifically for Prosper homeowners. Our goal is to empower you to protect your property and prevent costly emergencies.
+                </p>
+            </div>
+        </section>
+
+        <!-- Blog Feed -->
+        <section class="pb-24 bg-white relative">
+            <div class="max-w-4xl mx-auto px-6 lg:px-16">
+                
+                <!-- Featured Post -->
+                <div class="mb-16">
+                    <div class="flex items-center gap-2 mb-6">
+                        <span class="h-px bg-gray-200 flex-1"></span>
+                        <span class="text-sm font-bold text-gray-400 uppercase tracking-widest">Latest Article</span>
+                        <span class="h-px bg-gray-200 flex-1"></span>
+                    </div>
+
+                    <article class="bg-white p-8 md:p-12 rounded-2xl shadow-soft hover:shadow-xl transition-all duration-300 border border-secondary group relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-accent"></div>
+                        
+                        <!-- Meta Info -->
+                        <div class="flex items-center gap-4 text-sm text-gray-500 mb-6 font-medium">
+                            <span class="flex items-center gap-2 text-primary">
+                                <i class="far fa-calendar-alt"></i> January 16, 2026
+                            </span>
+                            <span class="w-1 h-1 bg-gray-300 rounded-full"></span>
+                            <span>Prevention Guide</span>
+                        </div>
+
+                        <!-- Title -->
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 group-hover:text-primary transition-colors leading-tight">
+                            The Ultimate Guide to Preventing Plumbing Emergencies in Prosper, TX
+                        </h2>
+
+                        <!-- Excerpt -->
+                        <p class="text-lg text-gray-600 leading-relaxed mb-8">
+                            Protecting your Prosper home requires understanding local challenges like hard water and shifting clay soil. This guide outlines five essential maintenance tips to prevent costly disasters. First, combat mineral buildup by flushing water heaters annually. Second, monitor for slab leaks caused by North Texas foundation shifts. Third, protect drains by never flushing grease or "flushable" wipes. Fourth, locate and test your emergency shut-off valve before a crisis occurs. Finally, prepare for sudden freezes by insulating exposed pipes. Routine maintenance prevents nearly eighty percent of plumbing emergencies. Follow these expert strategies to safeguard your property or contact The Prosper Plumber today.
+                        </p>
+
+                        <!-- Read More Button -->
+                        <a href="https://jb3147.github.io/prosper-plumbing-services-2026-01-16-t7bt4/blog/the-ultimate-guide-to-preventing-plumbing-emergenc.html" class="inline-flex justify-center items-center bg-primary text-white font-semibold rounded-full px-8 py-3 hover:brightness-110 hover:scale-105 hover:shadow-glow transition-all duration-300">
+                            Read More
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 ml-2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                            </svg>
+                        </a>
+                    </article>
+                </div>
+
+                <!-- Future Posts Placeholders -->
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Placeholder 1 -->
+                    <div class="bg-gray-50 border-2 border-dashed border-gray-200 p-10 rounded-2xl flex flex-col items-center justify-center text-center min-h-[300px] hover:bg-secondary/30 transition-colors">
+                        <div class="w-16 h-16 bg-white rounded-full shadow-sm flex items-center justify-center text-gray-300 mb-6">
+                            <i class="fas fa-tools text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-400 mb-2">Upcoming Content</h3>
+                        <p class="text-gray-400 text-sm">We are crafting more expert guides on water heater maintenance and leak detection.</p>
+                    </div>
+
+                    <!-- Placeholder 2 -->
+                    <div class="bg-gray-50 border-2 border-dashed border-gray-200 p-10 rounded-2xl flex flex-col items-center justify-center text-center min-h-[300px] hover:bg-secondary/30 transition-colors">
+                        <div class="w-16 h-16 bg-white rounded-full shadow-sm flex items-center justify-center text-gray-300 mb-6">
+                            <i class="fas fa-pen-nib text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-400 mb-2">Editor's Desk</h3>
+                        <p class="text-gray-400 text-sm">Stay tuned for local plumbing news and seasonal checklists for North Texas.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-6 lg:px-16 py-20">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <!-- Branding -->
+                <div class="space-y-6">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25" />
+                            </svg>
+                        </div>
+                        <span class="text-xl font-bold text-gray-900">The Prosper Plumber</span>
+                    </a>
+                    <p class="text-gray-500 leading-relaxed text-sm">
+                        Premier plumbing services for Prosper, TX and surrounding areas. Committed to quality, integrity, and speed.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-600 hover:text-primary hover:border-primary transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-600 hover:text-primary hover:border-primary transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-600 hover:text-primary hover:border-primary transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="font-bold text-gray-900 mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="services.html" class="text-gray-500 hover:text-primary transition-colors">Services</a></li>
+                        <li><a href="blog.html" class="text-gray-500 hover:text-primary transition-colors">Blog</a></li>
+                        <li><a href="contact.html" class="text-gray-500 hover:text-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h4 class="font-bold text-gray-900 mb-6">Legal</h4>
+                    <ul class="space-y-3">
+                        <li><a href="privacy.html" class="text-gray-500 hover:text-primary transition-colors">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-500 hover:text-primary transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-bold text-gray-900 mb-6">Contact Us</h4>
+                    <ul class="space-y-4 text-sm text-gray-500">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-map-marker-alt mt-1 text-primary"></i>
+                            <span>3820 First Street<br>Prosper, Texas 75078</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-phone-alt text-primary"></i>
+                            <a href="tel:4694080308" class="hover:text-primary transition-colors">(469) 408-0308</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-envelope text-primary"></i>
+                            <a href="mailto:best@plumber.com" class="hover:text-primary transition-colors">best@plumber.com</a>
+                        </li>
+                        <li class="flex items-start gap-3 mt-4">
+                            <i class="fas fa-clock mt-1 text-primary"></i>
+                            <span>
+                                Mon - Fri: 8:00 AM - 4:30 PM<br>
+                                Sat - Sun: Closed
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-200 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-gray-400">© 2025 The Prosper Plumber. All rights reserved.</p>
+                <div class="flex items-center gap-2 text-sm text-gray-400">
+                    <i class="fas fa-bolt text-yellow-400"></i> Local & Trusted
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        // Close all others
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+            
+            // Header Scroll Styling
+            const header = document.querySelector('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 20) {
+                    header.classList.add('shadow-md');
+                    header.classList.add('bg-white/95');
+                } else {
+                    header.classList.remove('shadow-md');
+                    header.classList.remove('bg-white/95');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
