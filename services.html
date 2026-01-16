@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | The Prosper Plumber</title>
+    <meta name="description" content="Comprehensive plumbing services in Prosper, TX. From emergency repairs to water heater installations and drain cleaning.">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5B4BFF',
+                        secondary: '#EEF0FF',
+                        accent: '#00E5A8',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 40px rgba(0,0,0,0.1)',
+                        'glow': '0 0 20px rgba(91, 75, 255, 0.3)',
+                    },
+                    scale: {
+                        '102': '1.02',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-gray-800 antialiased selection:bg-accent selection:text-white flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <header class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300">
+        <nav class="max-w-7xl mx-auto px-6 lg:px-16 h-24 flex items-center justify-between">
+            <div class="flex items-center justify-between w-full">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-2 group">
+                    <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white group-hover:rotate-12 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25" />
+                        </svg>
+                    </div>
+                    <span class="text-xl font-bold tracking-tight text-gray-900 group-hover:text-primary transition-colors">The Prosper Plumber</span>
+                </a>
+
+                <!-- Back Link -->
+                <a href="index.html" class="font-medium text-gray-600 hover:text-primary transition-colors flex items-center gap-1">
+                    <i class="fas fa-arrow-left text-sm"></i> Back
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Detailed Hero Section -->
+    <section class="relative pt-32 pb-16 lg:pt-48 lg:pb-24 bg-gradient-to-br from-secondary via-white to-white overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-[#EEF0FF] to-transparent opacity-60 rounded-l-[100px] pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-16 relative z-10 text-center">
+            <h1 class="text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 mb-6">
+                Our <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Plumbing Services</span>
+            </h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                Professional, licensed, and insured solutions for every plumbing need in Prosper, TX. From emergency fixes to major installations, we do it all with a 5-star standard.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-16">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1: Emergency Repairs -->
+                <div class="bg-white border border-gray-100 p-8 rounded-2xl shadow-soft hover:shadow-xl hover:scale-102 transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-secondary rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                        <i class="fas fa-truck-fast text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">24/7 Emergency Repairs</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Burst pipes and major leaks don't wait for business hours. Our team is on standby 24/7 to protect your home from water damage immediately.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-accent"></i> 60-min response time</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-accent"></i> Burst pipe isolation</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2: Leak Detection -->
+                <div class="bg-white border border-gray-100 p-8 rounded-2xl shadow-soft hover:shadow-xl hover:scale-102 transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-secondary rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                        <i class="fas fa-magnifying-glass-droplet text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Leak Detection</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        High water bill? We use advanced non-invasive technology to pinpoint hidden slab leaks and wall leaks without unnecessary destruction.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-accent"></i> Acoustic listening tech</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-accent"></i> Thermal imaging</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3: Water Heaters -->
+                <div class="bg-white border border-gray-100 p-8 rounded-2xl shadow-soft hover:shadow-xl hover:scale-102 transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-secondary rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                        <i class="fas fa-fire text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Water Heater Services</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Enjoy consistent hot water. We repair and install both traditional tank and modern tankless water heater systems suited for your family's needs.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-accent"></i> Tankless upgrades</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-accent"></i> Routine flushing</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4: Drain Cleaning -->
+                <div class="bg-white border border-gray-100 p-8 rounded-2xl shadow-soft hover:shadow-xl hover:scale-102 transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-secondary rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                        <i class="fas fa-shower text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Drain Cleaning</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Say goodbye to slow drains and backups. We utilize professional-grade snakes and hydro-jetting to clear even the most stubborn clogs.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-accent"></i> Hydro-jetting</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-accent"></i> Camera inspections</li>
+                    </ul>
+                </div>
+
+                <!-- Service 5: Fixture Installation -->
+                <div class="bg-white border border-gray-100 p-8 rounded-2xl shadow-soft hover:shadow-xl hover:scale-102 transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-secondary rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                        <i class="fas fa-faucet text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Fixture Installation</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Upgrade your bathroom or kitchen with professional installation of faucets, toilets, sinks, and garbage disposals. Done right, the first time.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-accent"></i> Modern aesthetics</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-accent"></i> Water-saving fixtures</li>
+                    </ul>
+                </div>
+
+                <!-- Service 6: Sewer Line Repair -->
+                <div class="bg-white border border-gray-100 p-8 rounded-2xl shadow-soft hover:shadow-xl hover:scale-102 transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-secondary rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                        <i class="fas fa-network-wired text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Sewer Line Services</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Protect your property's foundation with our expert sewer line repair and replacement services. We offer trenchless solutions to save your lawn.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-accent"></i> Trenchless repair</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-accent"></i> Root infiltration fixes</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-primary relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Need a Service Not Listed?</h2>
+            <p class="text-lg text-white/90 mb-10 max-w-2xl mx-auto">
+                We handle almost everything plumbing-related. Contact us today to discuss your specific needs with a licensed Prosper expert.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="contact.html" class="inline-flex justify-center items-center bg-white text-primary font-bold rounded-full px-8 py-4 hover:bg-gray-50 hover:scale-105 transition-all duration-300 shadow-lg">
+                    Contact Us Now
+                </a>
+                <a href="tel:4694080308" class="inline-flex justify-center items-center bg-transparent border-2 border-white text-white font-bold rounded-full px-8 py-4 hover:bg-white/10 transition-all duration-300">
+                    <i class="fas fa-phone-alt mr-2"></i> (469) 408-0308
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-16">
+            <div class="grid md:grid-cols-4 gap-12 border-b border-gray-800 pb-12 mb-10">
+                <div class="col-span-1 md:col-span-2 space-y-6">
+                    <div class="flex items-center gap-2">
+                        <div class="w-10 h-10 bg-primary/20 rounded-xl flex items-center justify-center text-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25" />
+                            </svg>
+                        </div>
+                        <span class="text-2xl font-bold tracking-tight">The Prosper Plumber</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed max-w-sm">
+                        Providing top-tier plumbing services to Prosper, TX and surrounding areas. Licensed, insured, and dedicated to your peace of mind.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-all"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-all"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-all"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="space-y-4">
+                    <h4 class="text-lg font-bold">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#reviews" class="text-gray-400 hover:text-white transition-colors">Reviews</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="text-lg font-bold">Contact Info</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-map-marker-alt mt-1 text-primary"></i>
+                            <span>Prosper, TX 75078</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-phone mt-1 text-primary"></i>
+                            <a href="tel:4694080308" class="hover:text-white transition-colors">(469) 408-0308</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-envelope mt-1 text-primary"></i>
+                            <a href="mailto:service@prosperplumber.com" class="hover:text-white transition-colors">service@prosperplumber.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>&copy; 2023 The Prosper Plumber. All rights reserved.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
