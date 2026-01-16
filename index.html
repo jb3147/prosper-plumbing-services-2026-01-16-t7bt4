@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Prosper Plumber | Best Plumbing Company in Prosper, TX</title>
+    <meta name="description" content="Top-rated plumbing services in Prosper, TX. 24/7 emergency repairs, leak detection, and water heater installation. Rated 4.9/5 stars by locals.">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5B4BFF',
+                        secondary: '#EEF0FF',
+                        accent: '#00E5A8',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 40px rgba(0,0,0,0.1)',
+                        'glow': '0 0 20px rgba(91, 75, 255, 0.3)',
+                    },
+                    scale: {
+                        '102': '1.02',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .clip-path-diagonal { clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+        .faq-answer.hidden { display: none; }
+        .mobile-menu.hidden { display: none; }
+    </style>
+</head>
+<body class="bg-white text-gray-800 antialiased selection:bg-accent selection:text-white">
+
+    <!-- Navigation -->
+    <header class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300">
+        <nav class="max-w-7xl mx-auto px-6 lg:px-16 h-24 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white group-hover:rotate-12 transition-transform duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25" />
+                    </svg>
+                </div>
+                <span class="text-xl font-bold tracking-tight text-gray-900 group-hover:text-primary transition-colors">The Prosper Plumber</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center gap-10">
+                <a href="#features" class="font-medium text-gray-600 hover:text-primary transition-colors">Features</a>
+                <a href="#about" class="font-medium text-gray-600 hover:text-primary transition-colors">About</a>
+                <a href="#reviews" class="font-medium text-gray-600 hover:text-primary transition-colors">Reviews</a>
+                <a href="#faq" class="font-medium text-gray-600 hover:text-primary transition-colors">FAQ</a>
+                <div class="flex items-center gap-2 text-sm font-semibold text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                    </svg>
+                    (469) 408-0308
+                </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-button lg:hidden w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-primary focus:outline-none hover:bg-primary hover:text-white transition-colors">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden lg:hidden absolute top-24 left-0 w-full bg-white shadow-xl border-t border-gray-100 p-6 flex flex-col gap-4">
+            <a href="#features" class="text-lg font-medium text-gray-700 py-2 border-b border-gray-50">Features</a>
+            <a href="#about" class="text-lg font-medium text-gray-700 py-2 border-b border-gray-50">About</a>
+            <a href="#reviews" class="text-lg font-medium text-gray-700 py-2 border-b border-gray-50">Reviews</a>
+            <a href="#faq" class="text-lg font-medium text-gray-700 py-2 border-b border-gray-50">FAQ</a>
+            <a href="tel:4694080308" class="text-lg font-bold text-primary py-2 flex items-center gap-2">
+                <i class="fas fa-phone-alt"></i> Call (469) 408-0308
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-24 lg:pt-48 lg:pb-32 overflow-hidden bg-gradient-to-br from-secondary via-white to-white">
+        <!-- Abstract Shapes -->
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-[#EEF0FF] to-transparent opacity-60 rounded-l-[100px] pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-accent/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-16 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8 animate-fade-in-up">
+                    <div class="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-md border border-gray-100">
+                        <span class="flex text-yellow-400 gap-1 text-xs">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </span>
+                        <span class="text-sm font-bold text-gray-700">4.9/5 Service Rating</span>
+                    </div>
+                    
+                    <h1 class="text-5xl lg:text-7xl font-bold tracking-tight text-gray-900 leading-[1.1]">
+                        The Best <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Plumbing</span> <br>in Prosper, TX
+                    </h1>
+                    
+                    <p class="text-xl text-gray-600 leading-relaxed max-w-lg">
+                        Best Plumbing company in Prosper, TX. We provide expert, licensed same-day repairs and peace of mind when you need it most.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="https://plumber.com" class="inline-flex justify-center items-center bg-primary text-white font-semibold rounded-full px-10 py-4 hover:brightness-110 hover:scale-105 hover:shadow-glow transition-all duration-300">
+                            Get Service Now
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 ml-2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                            </svg>
+                        </a>
+                        <a href="tel:4694080308" class="inline-flex justify-center items-center bg-white text-gray-800 font-semibold rounded-full px-10 py-4 border border-gray-200 shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300">
+                            (469) 408-0308
+                        </a>
+                    </div>
+
+                    <div class="flex items-center gap-6 pt-4 text-sm font-medium text-gray-500">
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-accent">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            Licensed Insured
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-accent">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            Locally Owned
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative lg:h-[600px] flex items-center justify-center">
+                    <div class="absolute inset-0 bg-secondary rounded-[3rem] rotate-3 transform"></div>
+                    <img src="https://images.unsplash.com/photo-1581578731117-104f8a3d31a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Professional Plumber Prosper TX" class="relative rounded-2xl shadow-soft hover:shadow-2xl transition-all duration-500 object-cover h-[500px] w-full z-10 transform hover:-translate-y-2">
+                    <!-- Floating Badge -->
+                    <div class="absolute -bottom-8 -left-8 md:-left-12 bg-white p-6 rounded-2xl shadow-xl z-20 animate-bounce-slow">
+                        <div class="flex items-center gap-4">
+                            <div class="bg-green-100 p-3 rounded-full text-green-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Response Time</p>
+                                <p class="text-lg font-bold text-gray-900">Under 60 Mins</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Sections -->
+    <section id="about" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-16">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="order-2 md:order-1 relative group">
+                    <div class="absolute -inset-4 bg-gradient-to-r from-primary to-accent rounded-2xl opacity-20 group-hover:opacity-30 blur-lg transition duration-500"></div>
+                    <img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Prosper Plumbing Team" class="relative rounded-2xl shadow-lg w-full h-full object-cover">
+                </div>
+                <div class="order-1 md:order-2 space-y-6">
+                    <div class="inline-block px-4 py-1.5 bg-secondary text-primary font-semibold rounded-full text-sm mb-2">Our Story</div>
+                    <h2 class="text-4xl font-bold text-gray-900">Your Trusted Local Experts Since Day One</h2>
+                    <p class="text-lg text-gray-600 leading-relaxed font-normal">
+                        Founded right here in Prosper, Texas, The Prosper Plumber began with a simple truck and a massive commitment to serving our neighbors with integrity. Over the years, we have grown from a one-man operation into the region's most trusted full-service plumbing team, dedicated to preserving home comfort and safety. We know the local infrastructure, the common soil issues affecting pipes, and the specific needs of Prosper homeowners better than anyone else.
+                    </p>
+                    <p class="text-lg text-gray-600 leading-relaxed font-normal">
+                        Our mission is simple: to provide peace of mind through expert craftsmanship and honest pricing. We believe that a plumbing emergency shouldn't ruin your day or your wallet. Core values of transparency, punctuality, and technical excellence drive everything we do. Whether it's a leaky faucet or a complete sewer line replacement, we treat your home with the same respect and care as we would our own.
+                    </p>
+                    <div class="pt-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Prosper_Texas_seal.png" alt="Prosper Texas Seal" class="h-16 opacity-80 rounded-full border border-gray-100 shadow-sm inline-block mr-4">
+                        <span class="text-sm font-semibold text-gray-500 align-middle">Proudly Serving 75078</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 bg-secondary/50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-16">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="text-primary font-bold tracking-wide uppercase text-sm mb-3">Why Choose Us</h2>
+                <h3 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Plumbing Solutions <br>Designed for Your Home</h3>
+                <p class="text-xl text-gray-600">From emergency fixes to routine maintenance, we bring the highest standards of service to every job.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 md:gap-12">
+                <!-- Feature 1 -->
+                <div class="bg-white p-10 rounded-2xl shadow-soft hover:shadow-xl hover:scale-105 transition-all duration-300 group cursor-default">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-primary mb-8 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-bold text-gray-900 mb-4">24/7 Emergency Service</h4>
+                    <p class="text-gray-600 leading-relaxed">
+                        Disasters don't wait for business hours. Whether it's 2 PM or 2 AM, our rapid response team is ready to tackle burst pipes and urgent leaks immediately.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-white p-10 rounded-2xl shadow-soft hover:shadow-xl hover:scale-105 transition-all duration-300 group cursor-default">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-primary mb-8 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-bold text-gray-900 mb-4">Licensed Experts</h4>
+                    <p class="text-gray-600 leading-relaxed">
+                        Every technician is fully licensed, insured, and background-checked. You get peace of mind knowing true professionals are handling your home's systems.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-white p-10 rounded-2xl shadow-soft hover:shadow-xl hover:scale-105 transition-all duration-300 group cursor-default">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-primary mb-8 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-bold text-gray-900 mb-4">Same-Day Repairs</h4>
+                    <p class="text-gray-600 leading-relaxed">
+                        We respect your time. With fully stocked trucks and efficient dispatching, we aim to solve your plumbing issues on the very first visit, the same day you call.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-24 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-16">
+            <div class="flex flex-col gap-24">
+                
+                <!-- Benefit 1 -->
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="relative">
+                        <div class="absolute -top-4 -left-4 w-24 h-24 bg-accent/20 rounded-full blur-xl"></div>
+                        <img src="https://images.unsplash.com/photo-1542013936693-884638332954?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Family Peace of Mind" class="rounded-2xl shadow-soft relative z-10 w-full hover:scale-102 transition-transform duration-500">
+                    </div>
+                    <div class="space-y-6">
+                        <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Peace of Mind Always</h3>
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            A plumbing failure can cause significant stress and damage to your home. We eliminate that worry. With our comprehensive warranties and quality guarantees, you can sleep soundly knowing your home's vital systems are functioning perfectly. We don't just fix symptoms; we solve the root cause.
+                        </p>
+                        <ul class="space-y-3 pt-4">
+                            <li class="flex items-center gap-3 text-gray-700 font-medium">
+                                <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                100% Satisfaction Guarantee
+                            </li>
+                            <li class="flex items-center gap-3 text-gray-700 font-medium">
+                                <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                Transparent, Upfront Pricing
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="order-2 lg:order-1 space-y-6">
+                        <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center text-white mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Expert Fixes Fast</h3>
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            In the Texas heat or during a freeze, efficient plumbing is non-negotiable. Our team leverages advanced diagnostic tools to pinpoint issues rapidly. We arrive, we diagnose, and we fix it—fast. No lingering problems, no recurring visits, just professional results that last.
+                        </p>
+                        <ul class="space-y-3 pt-4">
+                            <li class="flex items-center gap-3 text-gray-700 font-medium">
+                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                Advanced Leak Detection Technology
+                            </li>
+                            <li class="flex items-center gap-3 text-gray-700 font-medium">
+                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                Fully Stocked Service Vehicles
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="order-1 lg:order-2 relative">
+                        <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-xl"></div>
+                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fast Plumbing Repair" class="rounded-2xl shadow-soft relative z-10 w-full hover:scale-102 transition-transform duration-500">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="reviews" class="py-24 bg-secondary relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-16">
+            
+            <!-- Google Reviews Header Badge -->
+            <div class="flex justify-center mb-12">
+                <a href="#" class="bg-white px-8 py-4 rounded-full shadow-lg flex items-center gap-4 hover:scale-105 transition-transform duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" class="w-8 h-8">
+                    <div class="text-left">
+                        <div class="flex text-yellow-500 text-sm gap-0.5 mb-0.5">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="text-sm font-bold text-gray-900">4.9/5 from 51 Google Reviews</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Loved by Prosper Locals</h2>
+                <p class="text-xl text-gray-600">Don't just take our word for it. Here is what your neighbors are saying.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Review 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300">
+                    <div class="text-yellow-400 text-xs flex gap-1 mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 text-sm leading-relaxed mb-6">"Our water heater died on a Saturday morning. Prosper Plumbing came out within 2 hours and had a new unit installed by the afternoon. Incredible speed and professionalism!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-500 font-bold">JD</div>
+                        <div>
+                            <p class="font-bold text-gray-900 text-sm">James Davidson</p>
+                            <p class="text-xs text-gray-500">Homeowner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300">
+                    <div class="text-yellow-400 text-xs flex gap-1 mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 text-sm leading-relaxed mb-6">"I've used many plumbers in TX, but these guys are the best. They fixed a slab leak that others couldn't find. Honest pricing and they left my house spotless."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-500 font-bold">SM</div>
+                        <div>
+                            <p class="font-bold text-gray-900 text-sm">Sarah Miller</p>
+                            <p class="text-xs text-gray-500">Local Resident</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300">
+                    <div class="text-yellow-400 text-xs flex gap-1 mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 text-sm leading-relaxed mb-6">"Highly recommend for any emergency. They actually pick up the phone at night! Fixed a bursting pipe and saved us thousands in potential water damage."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-500 font-bold">RT</div>
+                        <div>
+                            <p class="font-bold text-gray-900 text-sm">Robert Thompson</p>
+                            <p class="text-xs text-gray-500">Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300">
+                    <div class="text-yellow-400 text-xs flex gap-1 mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 text-sm leading-relaxed mb-6">"Great experience with their leak detection team. Very high-tech equipment and they explained everything clearly before starting work. Peace of mind restored!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-500 font-bold">EL</div>
+                        <div>
+                            <p class="font-bold text-gray-900 text-sm">Emily Lawson</p>
+                            <p class="text-xs text-gray-500">Teacher</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-white">
+        <div class="max-w-3xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                <p class="text-lg text-gray-600">Answers to common questions about our plumbing services.</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="faq-item border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <button class="faq-question w-full px-8 py-6 text-left flex justify-between items-center bg-white hover:bg-gray-50 focus:outline-none">
+                        <span class="text-lg font-bold text-gray-900">Do you offer 24/7 emergency services?</span>
+                        <svg class="faq-icon w-6 h-6 text-primary transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer hidden bg-gray-50 px-8 py-6 border-t border-gray-100">
+                        <p class="text-gray-600 text-sm md:text-base leading-relaxed">Yes, absolutely. We know that plumbing emergencies don't stick to a schedule. Our team is on standby 24 hours a day, 7 days a week, including holidays, to handle urgent issues like burst pipes, severe clogs, and overflowing toilets.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-item border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <button class="faq-question w-full px-8 py-6 text-left flex justify-between items-center bg-white hover:bg-gray-50 focus:outline-none">
+                        <span class="text-lg font-bold text-gray-900">What areas do you service besides Prosper?</span>
+                        <svg class="faq-icon w-6 h-6 text-primary transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer hidden bg-gray-50 px-8 py-6 border-t border-gray-100">
+                        <p class="text-gray-600 text-sm md:text-base leading-relaxed">While we are based in Prosper (75078), we also proudly serve surrounding communities including Celina, Frisco, McKinney, and Little Elm. If you are unsure if you are in our service area, just give us a call!</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <button class="faq-question w-full px-8 py-6 text-left flex justify-between items-center bg-white hover:bg-gray-50 focus:outline-none">
+                        <span class="text-lg font-bold text-gray-900">How do you charge for your services?</span>
+                        <svg class="faq-icon w-6 h-6 text-primary transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer hidden bg-gray-50 px-8 py-6 border-t border-gray-100">
+                        <p class="text-gray-600 text-sm md:text-base leading-relaxed">We believe in transparency. For most jobs, we provide a flat-rate price upfront after diagnosing the issue, so you know exactly what it will cost before we start work. There are no hidden fees or surprise charges at the end.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <button class="faq-question w-full px-8 py-6 text-left flex justify-between items-center bg-white hover:bg-gray-50 focus:outline-none">
+                        <span class="text-lg font-bold text-gray-900">Are your plumbers licensed and insured?</span>
+                        <svg class="faq-icon w-6 h-6 text-primary transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer hidden bg-gray-50 px-8 py-6 border-t border-gray-100">
+                        <p class="text-gray-600 text-sm md:text-base leading-relaxed">Yes, all our technicians are fully licensed by the state of Texas and carry comprehensive insurance. We effect rigorous background checks and drug screenings to ensure your safety and peace of mind.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="faq-item border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <button class="faq-question w-full px-8 py-6 text-left flex justify-between items-center bg-white hover:bg-gray-50 focus:outline-none">
+                        <span class="text-lg font-bold text-gray-900">Do you offer warranties on your work?</span>
+                        <svg class="faq-icon w-6 h-6 text-primary transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer hidden bg-gray-50 px-8 py-6 border-t border-gray-100">
+                        <p class="text-gray-600 text-sm md:text-base leading-relaxed">Absolutely. We stand behind our craftsmanship. We offer a 100% satisfaction guarantee on all services, along with specific manufacturer warranties on parts and labor warranties on our installations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-32 relative flex items-center justify-center overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="absolute inset-0 z-0 bg-gradient-to-r from-gray-900 to-gray-900/80"></div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-6 text-center space-y-8">
+            <h2 class="text-4xl md:text-6xl font-bold text-white tracking-tight">Need a Plumber Now?</h2>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto">Don't let a small leak turn into a big problem. Contact the experts at Prosper Plumbing for immediate assistance.</p>
+            
+            <div class="flex flex-col sm:flex-row gap-6 justify-center pt-8">
+                <a href="https://plumber.com" class="inline-flex justify-center items-center bg-primary text-white font-bold text-lg rounded-full px-12 py-4 hover:bg-white hover:text-primary hover:scale-105 transition-all duration-300 shadow-glow">
+                    Schedule Service
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 ml-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </svg>
+                </a>
+                <a href="tel:4694080308" class="inline-flex justify-center items-center bg-transparent border-2 border-white text-white font-bold text-lg rounded-full px-12 py-4 hover:bg-white hover:text-gray-900 hover:scale-105 transition-all duration-300">
+                    <i class="fas fa-phone-alt mr-3"></i> (469) 408-0308
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-6 lg:px-16 py-20">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <!-- Branding -->
+                <div class="space-y-6">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25" />
+                            </svg>
+                        </div>
+                        <span class="text-xl font-bold text-gray-900">The Prosper Plumber</span>
+                    </a>
+                    <p class="text-gray-500 leading-relaxed text-sm">
+                        Premier plumbing services for Prosper, TX and surrounding areas. Committed to quality, integrity, and speed.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-600 hover:text-primary hover:border-primary transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-600 hover:text-primary hover:border-primary transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-600 hover:text-primary hover:border-primary transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="font-bold text-gray-900 mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="services.html" class="text-gray-500 hover:text-primary transition-colors">Services</a></li>
+                        <li><a href="blog.html" class="text-gray-500 hover:text-primary transition-colors">Blog</a></li>
+                        <li><a href="contact.html" class="text-gray-500 hover:text-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h4 class="font-bold text-gray-900 mb-6">Legal</h4>
+                    <ul class="space-y-3">
+                        <li><a href="privacy.html" class="text-gray-500 hover:text-primary transition-colors">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-500 hover:text-primary transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-bold text-gray-900 mb-6">Contact Us</h4>
+                    <ul class="space-y-4 text-sm text-gray-500">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-map-marker-alt mt-1 text-primary"></i>
+                            <span>3820 First Street<br>Prosper, Texas 75078</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-phone-alt text-primary"></i>
+                            <a href="tel:4694080308" class="hover:text-primary transition-colors">(469) 408-0308</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-envelope text-primary"></i>
+                            <a href="mailto:best@plumber.com" class="hover:text-primary transition-colors">best@plumber.com</a>
+                        </li>
+                        <li class="flex items-start gap-3 mt-4">
+                            <i class="fas fa-clock mt-1 text-primary"></i>
+                            <span>
+                                Mon - Fri: 8:00 AM - 4:30 PM<br>
+                                Sat - Sun: Closed
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-200 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-gray-400">© 2025 The Prosper Plumber. All rights reserved.</p>
+                <div class="flex items-center gap-2 text-sm text-gray-400">
+                    <i class="fas fa-bolt text-yellow-400"></i> Local & Trusted
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        // Close all others
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+            
+            // Header Scroll Styling
+            const header = document.querySelector('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 20) {
+                    header.classList.add('shadow-md');
+                    header.classList.add('bg-white/95');
+                } else {
+                    header.classList.remove('shadow-md');
+                    header.classList.remove('bg-white/95');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
